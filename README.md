@@ -2,7 +2,7 @@ COMP1950
 ========
 
 GitHub Excercise
-COMP1950*somestuff*
+COMP1950 *somestuff* should be italic
 
 
 ## Course Info
