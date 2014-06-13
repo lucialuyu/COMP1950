@@ -3,15 +3,42 @@
 <head>
 	<title>Hello World GitHub Change</title>
 	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			$("#hide").click(function() {
+				$("#box").hide(3000);
+			});
+			
+			$("#show").click(function() {
+				$("#box").show(3000);
+			});
+			
+			$("#toggle").click(function() {
+				$("#box").toggle(3000);
+			});
+			
+			$("#slideup").click(function() {
+				$("#box").slideUp(3000);
+			});
+			
+			$("#slidedown").click(function() {
+				$("#box").slideDown(3000);
+			});
+		});
+	</script>
 	
+	<style>
+		#box { width: 400px;  height: 300px; background: cornflowerblue;}
+	</style>
 </head>
 <body>
 	<h1>jQuery Test</h1>
 	<ul>
-		<li>Hide</li>
-		<li>Show</li>
-		<li>Slide Up</li>
-		<li>Slide Down</li>
+		<li id="hide"><a href="#">Hide</a></li>
+		<li id="show"><a href="#">Show</a></li>
+		<li id="toggle"><a href="#">Toggle</a></li>
+		<li id="slideup"><a href="#">Slide Up</a></li>
+		<li id="slidedown"><a href="#">Slide Down</a></li>
 	</ul>
 	<div id="box"> Testing jQuery functions </div>
 </body>
